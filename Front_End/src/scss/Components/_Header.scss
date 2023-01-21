@@ -1,0 +1,71 @@
+.header {
+    width: 100%;
+    box-shadow: 0px 1px 2px rgba(2, 17, 37, 0.12);
+    padding: 12px 35px 12px 24px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .logo-box {
+        display: flex;
+        align-items: center;
+        img {
+            width: 40px;
+        }
+
+        span {
+            margin-left: 20px;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+            display: flex;
+            align-items: center;
+            color: #0E1114;
+        }
+        
+    }
+
+    &--dialog-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &--partner-name {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: #0E1114;
+    }
+
+    &--online {
+        color: #7BBFFF;
+    }
+    &--offline {
+        color: #CDD5DE;
+    }
+
+    &--user-info {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        .more {
+            width: 25px;
+            margin-right: 25px;
+            cursor: pointer;
+            opacity: 0.5;
+            transition: 0.1s ease-in-out;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+
+        .user-photo {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}
