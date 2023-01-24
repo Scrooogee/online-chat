@@ -21,6 +21,13 @@ const Registration: React.FC = () =>  {
         type="text" />
       </div>
       <div className='input-wraper'>
+        <label htmlFor="">Your name</label>
+        <input 
+        placeholder='John Smith'
+        required
+        type="text" />
+      </div>
+      <div className='input-wraper'>
         <label htmlFor="">Email</label>
         <input 
         placeholder='email@email.com'
