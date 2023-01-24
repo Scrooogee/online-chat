@@ -8,6 +8,7 @@
 body {
     font-family: 'Plus Jakarta Sans';
     font-style: 400;
+    height: 100vh;
 
     .form-wraper {
         display: flex;
@@ -17,7 +18,7 @@ body {
     }
 
     &::-webkit-scrollbar {
-        width: 6px;              
+        width: 3px;              
     }
       
     &::-webkit-scrollbar-track {
@@ -29,6 +30,74 @@ body {
         border-radius: 20px;       
         border: 3px solid #CDD5DE;  
     }
+}
+
+#root {
+    height: calc(100% - 64px);
+}
+
+.home {
+    height: 100%;
+}
+
+.messages {
+    width: 77%;
+    
+
+    &--box {
+        padding: 10px 80px;
+        display: flex;
+        flex-direction: column;
+        max-height: calc(100% - 79px);
+        overflow: scroll;
+    }
+    
+
+    &--input-box {
+        width: 100%;
+        padding: 0 50px 25px;
+        // margin: 25px 0;
+    }
+
+    &--input {
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+        height: 60px;
+        border: 1px solid #CDD5DE;
+        border-radius: 12px;
+        
+
+        textarea {
+            overflow: auto;
+            resize: none;
+            font-family: 'Plus Jakarta Sans';
+            width: 100%;
+            outline: none;
+            background: #FFFFFF;
+            border: none;
+            font-size: 14px;
+            line-height: 20px;
+            display: flex;
+            align-items: center;
+            color: #8FA0AF;
+
+        }
+
+        button {
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+        }
+
+        img {
+            
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+
 }
 
 

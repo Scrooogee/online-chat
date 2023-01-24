@@ -1,0 +1,32 @@
+.message {
+    max-width: 445px;
+    padding: 10px 20px;
+    background: #EEF1F4;
+    border-radius: 20px 20px 20px 0px;
+    margin: 3px 100px 3px 0;
+    align-self: flex-start;
+
+    &--time {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: right;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16px;
+        color: #616C76;
+
+        img {
+            margin-left: 3px;
+            height: 16px;
+        }
+
+    }
+}
+
+.my {
+    margin: 3px 0 3px 100px;
+    background: #E8F2FE;
+    border-radius: 20px 20px 0px 20px;
+    align-self: flex-end;
+}
