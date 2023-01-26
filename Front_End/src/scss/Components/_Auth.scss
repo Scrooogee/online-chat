@@ -72,8 +72,10 @@
             display: flex;
             flex-direction: column;
             margin-bottom: 30px;
+            position: relative;
 
             input {
+                
                 width: 300px;
                 height: 45px;
                 border: 1px solid #CDD5DE;
@@ -94,6 +96,30 @@
                     border: 1px solid #7BBFFF;
                     box-shadow: 0px 0px 0px 3px #7BBFFF;
                 }
+
+            }
+
+            .error {
+                outline:none;
+                border: 1px solid #FE2836;
+                box-shadow: 0px 0px 0px 3px #FE2836;
+
+                &:focus {
+                    border: 1px solid #FE2836;
+                    box-shadow: 0px 0px 0px 3px #FE2836;
+                }
+            }
+
+            .input--error {
+                position: absolute;
+                bottom: -29px;
+                left: 4px;
+                font-family: 'Plus Jakarta Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 16px;
+                color: #FE2836;
             }
 
             label {
@@ -121,6 +147,15 @@
 
             &:hover {
                 background: #53A0FF;
+            }
+
+            &:disabled {
+                cursor: auto;
+                background: #96d1ff;
+                
+                &:hover {
+                    background: #96d1ff;
+                }
             }
         }
     }
